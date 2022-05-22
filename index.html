@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>¿Queres Estar Siempre En Mi Vida?</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/220px-Heart_coraz%C3%B3n.svg.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi() {
+            alert('Ahora ya formaras parte de mi corazoncito siempre Amor, TE AMO🥺🥰😍💘');
+        }
+
+        function mueveElBoton() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>¿Quieres Estar Conmigo Siempre🥺?</h1>
+    <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" />
+    <img src="IMG-20220506-WA0033.jpg" width="200">
+</body>
+
+</html>
